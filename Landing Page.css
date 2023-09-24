@@ -1,0 +1,489 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+ section nav
+ {
+    inline-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: rgb(160, 184, 109);
+    position: fixed;
+    inset-inline-start: 0;
+    z-index: 60;
+} 
+nav  img{
+    inline-size: 50px;
+    cursor: pointer;
+    margin: 6px 0;
+}
+
+section nav ul{
+    list-style: none;
+    font-size: 20px;
+
+}
+
+nav li{
+    display: inline-block;
+    padding: 0 10px;
+    margin-inline-start:30px ;
+}
+
+nav li a{
+    text-decoration: none;
+    color: black;
+}
+ li a:hover{
+color:white;
+}
+
+ section nav .icons i
+{
+    margin: 0  10px;
+    font-size: 20px;
+    
+}
+section nav .icons i:hover
+{
+    color: white;
+    cursor: pointer;
+}
+
+section .contain
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    inset-block-start: 20%;
+    
+}
+section .contain h1{
+    position: relative;
+    font-size: 40px;
+    inset-block-start: 150px;
+    inset-inline-start: 30px;
+    color: rgb(172, 75, 23);
+
+}
+section .contain h1:hover{
+    position: relative;
+    font-size: 40px;
+    inset-block-start: 150px;
+    inset-inline-start: 30px;
+    color: rgb(23, 125, 172);
+
+}
+.contain h1 span{
+color:rgb(23, 125, 172);
+font-size: 30px;
+}
+
+section .contain p
+{
+    inline-size: 600px;
+    text-align: justify;
+    line-height: 20px;
+    position: relative;
+    inset-block-start: 200px;
+    inset-inline-start: 25px;
+}
+section .contain .main .learn
+{
+    background: rgb(39, 163, 191);
+    padding: 10px 20px;
+    position: relative;
+    inset-block-start: 250px;
+    inset-inline-start: 25px;
+    color: antiquewhite;
+    text-decoration: none;
+    
+}
+section .contain .main .learn:hover
+{
+    background: rgb(32, 139, 54);
+    padding: 10px 20px;
+    position: relative;
+    inset-block-start: 250px;
+    inset-inline-start: 25px;
+    color: antiquewhite;
+    text-decoration: none;
+    
+}
+
+
+section .contain .book img
+{
+    inline-size: 250px;
+    position: relative;
+    inset-block-start: 150px;
+    inset-inline-start: 20px;
+    border-radius: 10px;
+}
+
+.Bookstore
+{
+    inline-size: 100%;
+    block-size: 100vh;
+    padding: 70px 0;
+
+}
+.Bookstore h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 250px;
+    font-size: 40px;
+    margin-block-end: 30px;
+}
+.Bookstore .Bookbox
+{
+
+    inline-size: 100%;
+    block-size: 70vh;
+    inset-block-start:600px;
+    margin: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    
+   
+}
+.Bookstore .Bookbox .bookcard
+{
+    inline-size: 200px;
+    block-size: 350px;
+    text-align: center;
+    justify-items: center;
+    padding: 4px;
+    
+    margin: auto 20px;
+}
+.Bookstore .Bookbox .bookcard:hover
+{
+    box-shadow: 0 0 5px palevioletred;
+    
+
+}
+.Bookstore .Bookbox .bookcard .book1 img{
+    inline-size: 100px;
+   
+}
+.Bookstore .Bookbox .bookcard .book1 .tag h4{
+    margin: 10px;
+
+}
+
+
+.Bookstore .Bookbox .bookcard  .tag .price
+{
+margin: 8px;
+font-weight: bold;
+font-size: 500;
+margin-block-end: 15px;
+
+}
+.Bookstore .Bookbox .bookcard .tag .btn
+{
+    padding: 8px 20px;
+    border:4px solid orange;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-weight: bolder;
+    background-color: orange;
+   
+}
+.Bookstore .Bookbox .bookcard  .tag i{
+    color: orange;
+    cursor: pointer;
+    
+}
+
+/* //.Arrivals */
+
+.Arrivals
+{
+    inline-size: 100%;
+    block-size: 100vh;
+    margin-block-end: 40px;
+}
+
+.Arrivals h1
+{
+    
+    font-size: 40px;
+    text-align: center;
+    margin-block-end: 5px;  
+    padding: 80px;
+    
+}
+.Arrivals .arrive
+{
+    inline-size: 90%;
+    margin: 0 auto;
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap:20px 0;
+    overflow: hidden;
+    overflow: scroll;
+    
+}
+.Arrivals .arrive .arrivecard
+{
+    inset-block-start: 20px;
+    inline-size: 200px;
+    block-size: 380px;
+    text-align: center;
+    justify-items: center;
+    padding: 2px;
+    margin: auto 10px;
+    border: 2px solid gray;
+}
+
+.Arrivals .arrive .arrivecard
+{
+box-shadow: 0 0 5px palevioletred;   
+}
+.Arrivals .arrive .arrivecard:hover{
+    box-shadow: 0 0 5px ;
+}
+
+
+
+.Arrivals .arrive .arrivecard .tag .arrive_btn
+{
+    padding: 8px 20px;
+    border:1px solid yellow;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-weight: bolder;
+    background-color: yellow;
+}
+
+.Arrivals .arrive .arrivecard .tag .price
+{
+    margin: 8px;
+font-weight: bold;
+font-size: 500;
+text-align: center;
+margin-block-end: 15px;
+}
+.Arrivals .arrive .arrivecard .a1 img{
+   inline-size: 130px;
+}
+.Arrivals .arrive .arrivecard .tag i{
+    color: orange;
+}
+
+
+
+::-webkit-scrollbar
+{
+    inline-size: 10px;
+    block-size: 5px;
+}
+::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 4px  black;
+}
+::-webkit-scrollbar-thumb{
+    background: palegreen;
+    border-radius: 10px;
+}
+
+
+
+/* .review */
+.review
+{
+inline-size: 100%;
+block-size: auto;
+margin-block-end: 40px;
+}
+
+.review h1
+{
+    text-align: center;
+    font-size: 40px;
+    margin-block-start: 50px;
+    margin-block-end: 30px;
+}
+
+.review .reviewbox
+{
+    inline-size: 95%;
+    block-size: 50vh;
+    margin: 15px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.review .reviewbox .review_card
+{
+    
+    inline-size: 400px;
+    block-size: 300px;
+    box-shadow: 0 0 8px powderblue;
+    padding: 16px;
+    margin: 0 12px;
+    margin-block-end: 40px;
+}
+.review .reviewbox .review_card .icon1 i{
+    font-size: 20px;
+    color: orange;
+    cursor: pointer;
+    
+}
+.review .reviewbox .review_card .card p{
+    margin: 10px 0 10px 0;
+    text-align: justify;
+    line-height: 20px;
+}
+
+
+
+.Contact-form
+{
+	background-color:white;
+	
+}
+.contact-me h1{
+    
+    padding: 40px;
+    margin-block-start: 50px;
+}
+
+.form1
+{
+	display: flex;
+	flex-direction: column;
+	inline-size: 50%;
+	margin:0 auto ;
+}
+
+.form1 input, textarea
+{
+	margin-block-end: 10px;
+	border-radius: 10px;
+	background-color: whitesmoke;
+	text-decoration: none;
+	border: 0;
+}
+
+.form1 input, textarea
+{
+padding: 10px;
+color: white;
+}
+
+.contact-me
+{
+	text-align: center;
+	margin-block-end: 30px;
+	font-size: 3rem;
+}
+
+
+.submit
+{
+	margin-block-start: 20px;
+	inline-size: 30%;
+	background-color: #033a80;
+	color: white;
+	padding: 10px 15px;
+	margin:0 auto;
+    margin-block-end: 40px;
+
+
+}
+    
+
+
+footer
+{
+    inline-size: 100%;
+    background: lavender;
+}
+
+footer .foot
+{
+    inline-size: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+footer .foot  .tag{
+    margin: 10px 0;
+
+}
+footer .foot .tag img
+{
+    inline-size: 85px;
+    margin-block-end: 10px;
+}
+footer .foot .tag p{
+    inline-size: 200px;
+    line-height: 15px;
+    text-align: justify;
+    
+}
+
+footer .foot .tag h1{
+    font-size: 20px;
+    margin: 25px 0;
+    color: black;
+}
+footer .foot .tag a{
+    display: flex;
+    color: black;
+    text-decoration: none;
+    margin: 10px 0;
+}
+footer .foot .tag i{
+    margin-inline-end: 10px;
+    font-size: 30px;
+}
+
+footer .foot .tag .social
+{
+    margin: 0 5px;
+    cursor: pointer;
+
+}
+footer .foot .tag .social .fa-facebook:hover 
+{
+   color: blue;
+    
+}
+
+footer .foot .tag .social .fa-instagram:hover 
+{
+    background: linear-gradient(135deg, #8a3ab9, #e95950);
+    
+}
+footer .foot .tag .social .fa-twitter:hover 
+{
+   color: #1DA1F2;
+    
+}
+footer .foot .tag .social .fa-linkedin:hover 
+{
+    color: #0077B5;
+
+    
+}
+
+
+
+
+ p{
+    text-align: center;
+    color: black;
+}
